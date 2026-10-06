@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quản lý đơn hàng - DuAnKD</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <h1>DuAnKD</h1>
+
+      <nav>
+        <a href="../index.html"> Trang chủ </a>
+
+        <a href="sanpham.html"> Sản phẩm </a>
+
+        <a href="quanlysanpham.html"> Quản lý sản phẩm </a>
+
+        <a href="quanlydonhang.html"> Quản lý đơn hàng </a>
+      </nav>
+    </header>
+
+    <!-- NỘI DUNG -->
+
+    <main style="max-width: 1200px; margin: 40px auto; padding: 0 20px">
+      <h1>Quản lý đơn hàng</h1>
+
+      <!-- BỘ LỌC -->
+
+      <section
+        style="
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          margin-top: 25px;
+          margin-bottom: 25px;
+        "
+      >
+        <label for="locTrangThai"> Lọc theo trạng thái: </label>
+
+        <select id="locTrangThai" style="padding: 10px; margin-left: 10px">
+          <option value="tatca">Tất cả</option>
+
+          <option value="Chờ xác nhận">Chờ xác nhận</option>
+
+          <option value="Đã xác nhận">Đã xác nhận</option>
+
+          <option value="Đang giao">Đang giao</option>
+
+          <option value="Đã giao">Đã giao</option>
+
+          <option value="Đã hủy">Đã hủy</option>
+        </select>
+
+        <span id="soLuongDonHang" style="margin-left: 20px; font-weight: bold">
+          Tổng đơn hàng: 0
+        </span>
+      </section>
+
+      <!-- DANH SÁCH ĐƠN -->
+
+      <div id="danhSachDonHang">
+        <!-- JavaScript hiển thị -->
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <p>© 2026 DuAnKD - Website quản lý kho và bán hàng</p>
+    </footer>
+
+    <script src="../js/quanlydonhang.js"></script>
+  </body>
+</html>

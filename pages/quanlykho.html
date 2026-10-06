@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quản lý kho - DuAnKD</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <h1>DuAnKD</h1>
+
+      <nav>
+        <a href="../index.html"> Trang chủ </a>
+
+        <a href="sanpham.html"> Sản phẩm </a>
+
+        <a href="quanlysanpham.html"> Quản lý sản phẩm </a>
+
+        <a href="quanlydonhang.html"> Quản lý đơn hàng </a>
+
+        <a href="quanlykho.html"> Quản lý kho </a>
+      </nav>
+    </header>
+
+    <!-- NỘI DUNG -->
+
+    <main style="max-width: 1200px; margin: 40px auto; padding: 0 20px">
+      <h1>Quản lý kho</h1>
+
+      <div
+        style="
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          margin-top: 25px;
+        "
+      >
+        <h2>Danh sách tồn kho</h2>
+
+        <p id="thongKeKho">Đang tải...</p>
+      </div>
+
+      <!-- BẢNG KHO -->
+
+      <div
+        style="
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          margin-top: 25px;
+          overflow-x: auto;
+        "
+      >
+        <table style="width: 100%; border-collapse: collapse">
+          <thead>
+            <tr>
+              <th style="border: 1px solid #ddd; padding: 12px">ID</th>
+
+              <th style="border: 1px solid #ddd; padding: 12px">
+                Tên sản phẩm
+              </th>
+
+              <th style="border: 1px solid #ddd; padding: 12px">Danh mục</th>
+
+              <th style="border: 1px solid #ddd; padding: 12px">Giá</th>
+
+              <th style="border: 1px solid #ddd; padding: 12px">Tồn kho</th>
+
+              <th style="border: 1px solid #ddd; padding: 12px">Trạng thái</th>
+
+              <th style="border: 1px solid #ddd; padding: 12px">Nhập thêm</th>
+            </tr>
+          </thead>
+
+          <tbody id="bangKho"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <p>© 2026 DuAnKD - Website quản lý kho và bán hàng</p>
+    </footer>
+
+    <script src="../js/quanlykho.js"></script>
+  </body>
+</html>

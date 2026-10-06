@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Giỏ hàng - DuAnKD</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- ============================= -->
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <!-- ============================= -->
+
+    <nav>
+      <div class="logo">DuAnKD</div>
+
+      <div>
+        <a href="../index.html">Trang chủ</a>
+
+        <a href="sanpham.html">Sản phẩm</a>
+
+        <a href="giohang.html">Giỏ hàng</a>
+
+        <a href="yeuthich.html">Yêu thích</a>
+
+        <a href="donhang.html">Đơn hàng</a>
+
+        <a href="dangnhap.html">Đăng nhập</a>
+      </div>
+    </nav>
+
+
+    <!-- ============================= -->
+    <!-- NỘI DUNG -->
+    <!-- ============================= -->
+
+    <main class="container">
+
+      <h1>Giỏ hàng</h1>
+
+      <!-- Số lượng sản phẩm -->
+
+      <p id="soLuongGioHang">
+        Giỏ hàng đang trống
+      </p>
+
+
+      <!-- Danh sách sản phẩm -->
+
+      <div id="danhSachGioHang">
+        <!-- JavaScript sẽ hiển thị tại đây -->
+      </div>
+
+
+      <!-- Tổng tiền -->
+
+      <div
+        id="tongTienGioHang"
+        style="
+          margin-top: 30px;
+          padding: 20px;
+          background: white;
+          border-radius: 10px;
+          font-size: 22px;
+          font-weight: bold;
+        "
+      >
+        Tổng tiền: 0 VNĐ
+      </div>
+
+
+      <!-- Nút thao tác -->
+
+      <div
+        style="
+          margin-top: 20px;
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+        "
+      >
+
+        <a
+          href="sanpham.html"
+          class="product-button"
+        >
+          ← Tiếp tục mua hàng
+        </a>
+
+
+        <button
+          id="btnXoaTatCa"
+          type="button"
+        >
+          Xóa tất cả
+        </button>
+
+
+        <button
+          id="btnDatHang"
+          type="button"
+        >
+          Tiến hành đặt hàng
+        </button>
+
+      </div>
+
+    </main>
+
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+
+    <footer>
+      <p>
+        © 2026 DuAnKD - Website quản lý kho và bán hàng
+      </p>
+    </footer>
+
+
+    <!-- ============================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================= -->
+
+    <script src="../js/giohang.js"></script>
+
+  </body>
+</html>

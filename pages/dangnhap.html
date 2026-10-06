@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Đăng nhập</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        min-height: 100vh;    
+      }
+
+      .login-box {
+        width: 400px;
+        max-width: 90%;
+
+        background: white;
+
+        padding: 30px;
+
+        border-radius: 10px;
+
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      .login-box h1 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+
+        padding: 12px;
+
+        margin-bottom: 18px;
+
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+        font-size: 15px;
+      }
+
+      button {
+        width: 100%;
+
+        padding: 12px;
+
+        border: none;
+        border-radius: 5px;
+
+        background: #0d6efd;
+        color: white;
+
+        font-size: 16px;
+
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0b5ed7;
+      }
+
+      .thong-bao {
+        margin-top: 15px;
+
+        text-align: center;
+
+        color: #dc3545;
+
+        min-height: 20px;
+      }
+
+      .tai-khoan-mau {
+        margin-top: 20px;
+
+        padding: 12px;
+
+        background: #f8f9fa;
+
+        border-radius: 5px;
+
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="login-box">
+      <h1>Đăng nhập</h1>
+
+      <form onsubmit="dangNhap(event)">
+        <label for="tenDangNhap"> Tên đăng nhập </label>
+
+        <input
+          type="text"
+          id="tenDangNhap"
+          placeholder="Nhập tên đăng nhập"
+          autocomplete="username"
+        />
+
+        <label for="matKhau"> Mật khẩu </label>
+
+        <input
+          type="password"
+          id="matKhau"
+          placeholder="Nhập mật khẩu"
+          autocomplete="current-password"
+        />
+
+        <button type="submit">Đăng nhập</button>
+      </form>
+
+     <div id="thongBao" class="thong-bao"></div>
+
+<div style="text-align: center; margin-top: 15px;">
+    Chưa có tài khoản?
+    <a href="dangky.html"
+       style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+        Đăng ký ngay
+    </a>
+</div>
+
+<div class="tai-khoan-mau">
+        <strong>Tài khoản mẫu:</strong>
+
+        <br /><br />
+
+        Admin:
+        <strong>admin</strong>
+        /
+        <strong>123456</strong>
+
+        <br />
+
+        Nhân viên:
+        <strong>nhanvien</strong>
+        /
+        <strong>123456</strong>
+      </div>
+    </div>
+
+    <script src="../js/dangnhap.js"></script>
+  </body>
+</html>

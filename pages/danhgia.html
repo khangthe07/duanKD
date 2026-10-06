@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Đánh giá sản phẩm</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+
+
+<header>
+    <h1>ĐÁNH GIÁ SẢN PHẨM</h1>
+</header>
+
+<main>
+
+    <section class="danh-gia-container">
+
+        <h2>Đánh giá sản phẩm</h2>
+
+        <label for="tenKhachHang">
+            Tên khách hàng
+        </label>
+
+        <input
+            type="text"
+            id="tenKhachHang"
+            placeholder="Nhập tên của bạn"
+        >
+
+
+        <label for="soSao">
+            Mức đánh giá
+        </label>
+
+        <select id="soSao">
+
+            <option value="5">
+                ⭐⭐⭐⭐⭐ - Rất tốt
+            </option>
+
+            <option value="4">
+                ⭐⭐⭐⭐ - Tốt
+            </option>
+
+            <option value="3">
+                ⭐⭐⭐ - Bình thường
+            </option>
+
+            <option value="2">
+                ⭐⭐ - Không tốt
+            </option>
+
+            <option value="1">
+                ⭐ - Rất tệ
+            </option>
+
+        </select>
+
+
+        <label for="noiDung">
+            Nội dung đánh giá
+        </label>
+
+        <textarea
+            id="noiDung"
+            placeholder="Nhập nội dung đánh giá của bạn..."
+        ></textarea>
+
+
+        <button onclick="guiDanhGia()">
+            GỬI ĐÁNH GIÁ
+        </button>
+
+    </section>
+
+
+    <section class="danh-sach-container">
+
+        <h2>Các đánh giá của khách hàng</h2>
+
+        <div id="danhSachDanhGia"></div>
+
+    </section>
+
+</main>
+
+
+<script src="../js/danhgia.js"></script>
+
+
+</body>
+</html>

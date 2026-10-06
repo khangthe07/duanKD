@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quản lý nhà cung cấp</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f6f8;
+      }
+
+      header {
+        background: #212529;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: 30px auto;
+      }
+
+      .box {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      textarea {
+        height: 80px;
+        resize: vertical;
+      }
+
+      button {
+        padding: 10px 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+
+      .btn-save {
+        background: #198754;
+        color: white;
+      }
+
+      .btn-reset {
+        background: #6c757d;
+        color: white;
+      }
+
+      .btn-edit {
+        background: #ffc107;
+        color: black;
+      }
+
+      .btn-delete {
+        background: #dc3545;
+        color: white;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        background: #212529;
+        color: white;
+      }
+
+      .tim-kiem {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Quản lý nhà cung cấp</h1>
+    </header>
+
+    <div class="container">
+      <!-- FORM NHÀ CUNG CẤP -->
+      <div class="box">
+        <h2>Thông tin nhà cung cấp</h2>
+
+        <input type="hidden" id="supplierId" />
+
+        <label>Tên nhà cung cấp</label>
+       <input
+  type="text"
+  id="supplierName"
+  placeholder="Nhập tên nhà cung cấp"
+  maxlength="100"
+/>
+
+        <label>Số điện thoại</label>
+       <input
+  type="text"
+  id="supplierPhone"
+  placeholder="Nhập số điện thoại"
+  maxlength="15"
+/>
+
+        <label>Email</label>
+        <input type="email" id="supplierEmail" placeholder="Nhập email" />
+
+        <label>Địa chỉ</label>
+        <input
+  type="text"
+  id="supplierAddress"
+  placeholder="Nhập địa chỉ"
+  maxlength="200"
+/>
+
+        <label>Mô tả</label>
+        <textarea
+  id="supplierDescription"
+  placeholder="Nhập mô tả nhà cung cấp"
+  maxlength="500"
+></textarea>
+
+<p id="thongBaoNhaCungCap" style="margin-top: 5px; font-weight: bold;"></p>
+
+        <button class="btn-save" onclick="luuNhaCungCap()">Lưu</button>
+
+        <button class="btn-reset" onclick="lamMoiNhaCungCap()">Làm mới</button>
+      </div>
+
+      <!-- TÌM KIẾM -->
+      <div class="box">
+        <h2>Danh sách nhà cung cấp</h2>
+
+        <input
+          type="text"
+          id="timKiemNhaCungCap"
+          class="tim-kiem"
+          placeholder="Nhập tên nhà cung cấp cần tìm..."
+          oninput="timKiemNhaCungCap()"
+        />
+
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tên nhà cung cấp</th>
+              <th>Số điện thoại</th>
+              <th>Email</th>
+              <th>Địa chỉ</th>
+              <th>Mô tả</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+
+          <tbody id="danhSachNhaCungCap"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="../js/quanlynhacungcap.js"></script>
+  </body>
+</html>

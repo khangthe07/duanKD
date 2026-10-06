@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin tài khoản</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">DuAnKD</div>
+
+
+<div>
+    <a href="../index.html">Trang chủ</a>
+    <a href="sanpham.html">Sản phẩm</a>
+    <a href="giohang.html">Giỏ hàng</a>
+    <a href="yeuthich.html">Yêu thích</a>
+    <a href="donhang.html">Đơn hàng</a>
+    <a href="thongtin.html">Tài khoản</a>
+</div>
+</nav>
+
+<main class="container">
+
+
+<h1>Thông tin tài khoản</h1>
+
+<div
+    style="
+        background:white;
+        padding:25px;
+        border-radius:10px;
+        max-width:600px;
+        margin:auto;
+    "
+>
+
+    <label>Họ và tên</label>
+    <input
+        type="text"
+        id="hoTen"
+        placeholder="Nhập họ và tên"
+    >
+
+    <br><br>
+
+    <label>Tên đăng nhập</label>
+    <input
+        type="text"
+        id="tenDangNhap"
+        readonly
+    >
+
+    <br><br>
+
+    <label>Email</label>
+    <input
+        type="email"
+        id="email"
+        placeholder="Nhập email"
+    >
+
+    <br><br>
+
+    <label>Số điện thoại</label>
+    <input
+        type="text"
+        id="soDienThoai"
+        placeholder="Nhập số điện thoại"
+    >
+
+    <br><br>
+
+    <button type="button" onclick="luuThongTin()">
+        Lưu thông tin
+    </button>
+
+    <button type="button" onclick="dangXuat()">
+        Đăng xuất
+    </button>
+
+    <br><br>
+
+    <p id="thongBao"></p>
+
+</div>
+
+
+</main>
+
+<script src="../js/thongtin.js"></script>
+
+</body>
+</html>

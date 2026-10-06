@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Đăng ký tài khoản</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        min-height: 100vh;
+      }
+
+      .register-box {
+        width: 420px;
+        max-width: 90%;
+
+        background: white;
+
+        padding: 30px;
+
+        border-radius: 10px;
+
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+
+      input {
+        width: 100%;
+
+        padding: 12px;
+
+        margin-bottom: 16px;
+
+        border: 1px solid #ccc;
+
+        border-radius: 5px;
+
+        font-size: 15px;
+      }
+
+      button {
+        width: 100%;
+
+        padding: 12px;
+
+        border: none;
+
+        border-radius: 5px;
+
+        background: #198754;
+
+        color: white;
+
+        font-size: 16px;
+
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #157347;
+      }
+
+      .thong-bao {
+        margin-top: 15px;
+
+        text-align: center;
+
+        min-height: 20px;
+      }
+
+      .dang-nhap {
+        text-align: center;
+
+        margin-top: 20px;
+      }
+
+      .dang-nhap a {
+        color: #0d6efd;
+
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="register-box">
+      <h1>Đăng ký tài khoản</h1>
+
+      <form onsubmit="dangKy(event)">
+        <label> Họ và tên </label>
+
+        <input type="text" id="hoTen" placeholder="Nhập họ và tên" />
+
+        <label> Số điện thoại </label>
+
+        <input type="text" id="soDienThoai" placeholder="Nhập số điện thoại" />
+
+        <label> Email </label>
+
+        <input type="email" id="email" placeholder="Nhập email" />
+
+        <label> Tên đăng nhập </label>
+
+        <input type="text" id="tenDangNhap" placeholder="Nhập tên đăng nhập" />
+
+        <label> Mật khẩu </label>
+
+        <input type="password" id="matKhau" placeholder="Nhập mật khẩu" />
+
+        <label> Nhập lại mật khẩu </label>
+
+        <input
+          type="password"
+          id="xacNhanMatKhau"
+          placeholder="Nhập lại mật khẩu"
+        />
+
+        <button type="submit">Đăng ký</button>
+      </form>
+
+      <div id="thongBao" class="thong-bao"></div>
+
+      <div class="dang-nhap">
+    Đã có tài khoản?
+    <a href="dangnhap.html">Đăng nhập ngay</a>
+</div>
+
+<div style="text-align: center; margin-top: 12px;">
+    <a href="../index.html"
+       style="color: #555; text-decoration: none;">
+        ← Quay về trang chủ
+    </a>
+</div>
+    </div>
+
+    <script src="../js/dangky.js"></script>
+  </body>
+</html>

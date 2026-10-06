@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quản lý sản phẩm - DuAnKD</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <nav class="navbar">
+      <div class="logo">DuAnKD</div>
+
+      <div class="menu">
+        <a href="../index.html">Trang chủ</a>
+        <a href="sanpham.html">Sản phẩm</a>
+        <a href="quanlysanpham.html">Quản lý sản phẩm</a>
+        <a href="quanlydanhmuc.html">Quản lý danh mục</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Quản lý sản phẩm</h1>
+
+      <!-- FORM THÊM / SỬA -->
+      <div class="box">
+        <h2 id="tieuDeForm">Thêm sản phẩm</h2>
+
+        <input type="hidden" id="productId" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Tên sản phẩm</label>
+
+            <input
+              type="text"
+              id="productName"
+              placeholder="Nhập tên sản phẩm"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Danh mục</label>
+
+            <select id="category">
+              <option value="Ô tô">Ô tô</option>
+              <option value="Xe máy">Xe máy</option>
+              <option value="Xe đạp">Xe đạp</option>
+              <option value="Thuyền">Thuyền</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Giá sản phẩm</label>
+
+            <input type="number" id="price" placeholder="Nhập giá sản phẩm" />
+          </div>
+
+          <div class="form-group">
+            <label>Trạng thái</label>
+
+            <select id="status">
+              <option value="active">Đang bán</option>
+              <option value="inactive">Ngừng bán</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Mô tả</label>
+
+          <input
+            type="text"
+            id="description"
+            placeholder="Nhập mô tả sản phẩm"
+          />
+        </div>
+
+        <div class="buttons">
+          <button class="btn-add" onclick="luuSanPham()">Lưu sản phẩm</button>
+
+          <button class="btn-reset" onclick="lamMoiForm()">Làm mới</button>
+        </div>
+      </div>
+
+      <!-- TÌM KIẾM -->
+      <div class="box">
+        <h2>Danh sách sản phẩm</h2>
+
+        <div class="search">
+          <input
+            type="text"
+            id="timKiem"
+            placeholder="Tìm kiếm theo tên sản phẩm..."
+            oninput="hienThiSanPham()"
+          />
+        </div>
+      </div>
+
+      <!-- BẢNG SẢN PHẨM -->
+      <div class="box">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tên sản phẩm</th>
+              <th>Danh mục</th>
+              <th>Giá</th>
+              <th>Trạng thái</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+
+          <tbody id="danhSachSanPham"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CHÂN TRANG -->
+    <footer>
+      <p>© 2026 DuAnKD - Website Quản lý kho và bán hàng</p>
+    </footer>
+
+    <script src="../js/quanlysanpham.js"></script>
+  </body>
+</html>

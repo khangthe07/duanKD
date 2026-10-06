@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Đặt hàng - DuAnKD</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
+
+    <header>
+
+        <h1>
+            DuAnKD
+        </h1>
+
+        <nav>
+
+            <a href="../index.html">
+                Trang chủ
+            </a>
+
+            <a href="sanpham.html">
+                Sản phẩm
+            </a>
+
+            <a href="giohang.html">
+                Giỏ hàng
+            </a>
+
+            <a href="quanlysanpham.html">
+                Quản lý sản phẩm
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ============================= -->
+    <!-- NỘI DUNG -->
+    <!-- ============================= -->
+
+    <main
+        style="
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        "
+    >
+
+        <h1>
+            Đặt hàng
+        </h1>
+
+
+        <!-- ============================= -->
+        <!-- THÔNG TIN KHÁCH HÀNG -->
+        <!-- ============================= -->
+
+        <section
+            style="
+                background: white;
+                padding: 25px;
+                border-radius: 10px;
+                margin-top: 25px;
+            "
+        >
+
+            <h2>
+                Thông tin khách hàng
+            </h2>
+
+
+            <form id="formDatHang">
+
+
+                <!-- HỌ TÊN -->
+
+                <div style="margin-top: 20px;">
+
+                    <label for="hoTen">
+                        Họ và tên:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="hoTen"
+                        placeholder="Nhập họ và tên"
+                        required
+                        style="
+                            width: 100%;
+                            padding: 10px;
+                            margin-top: 5px;
+                            box-sizing: border-box;
+                        "
+                    >
+
+                </div>
+
+
+                <!-- SỐ ĐIỆN THOẠI -->
+
+                <div style="margin-top: 20px;">
+
+                    <label for="soDienThoai">
+                        Số điện thoại:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="tel"
+                        id="soDienThoai"
+                        placeholder="Nhập số điện thoại"
+                        required
+                        style="
+                            width: 100%;
+                            padding: 10px;
+                            margin-top: 5px;
+                            box-sizing: border-box;
+                        "
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div style="margin-top: 20px;">
+
+                    <label for="email">
+                        Email:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Nhập email"
+                        required
+                        style="
+                            width: 100%;
+                            padding: 10px;
+                            margin-top: 5px;
+                            box-sizing: border-box;
+                        "
+                    >
+
+                </div>
+
+
+                <!-- ĐỊA CHỈ -->
+
+                <div style="margin-top: 20px;">
+
+                    <label for="diaChi">
+                        Địa chỉ nhận hàng:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="diaChi"
+                        rows="4"
+                        placeholder="Nhập địa chỉ nhận hàng"
+                        required
+                        style="
+                            width: 100%;
+                            padding: 10px;
+                            margin-top: 5px;
+                            box-sizing: border-box;
+                        "
+                    ></textarea>
+
+                </div>
+
+
+                <!-- GHI CHÚ -->
+
+                <div style="margin-top: 20px;">
+
+                    <label for="ghiChu">
+                        Ghi chú:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="ghiChu"
+                        rows="3"
+                        placeholder="Ghi chú cho đơn hàng (nếu có)"
+                        style="
+                            width: 100%;
+                            padding: 10px;
+                            margin-top: 5px;
+                            box-sizing: border-box;
+                        "
+                    ></textarea>
+
+                </div>
+
+
+                <!-- PHƯƠNG THỨC THANH TOÁN -->
+
+                <div style="margin-top: 20px;">
+
+                    <label for="phuongThucThanhToan">
+                        Phương thức thanh toán:
+                    </label>
+
+                    <br>
+
+                    <select
+                        id="phuongThucThanhToan"
+                        required
+                        style="
+                            width: 100%;
+                            padding: 10px;
+                            margin-top: 5px;
+                        "
+                    >
+
+                        <option value="">
+                            -- Chọn phương thức thanh toán --
+                        </option>
+
+                        <option value="cod">
+                            Thanh toán khi nhận hàng (COD)
+                        </option>
+
+                        <option value="chuyenKhoan">
+                            Chuyển khoản ngân hàng
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <br>
+
+
+                <!-- NÚT -->
+
+                <button
+                    type="submit"
+                >
+                    Xác nhận đặt hàng
+                </button>
+
+
+                <a
+                    href="giohang.html"
+                    class="product-button"
+                    style="margin-left: 10px;"
+                >
+                    ← Quay lại giỏ hàng
+                </a>
+
+
+            </form>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- ĐƠN HÀNG -->
+        <!-- ============================= -->
+
+        <section
+            style="
+                background: white;
+                padding: 25px;
+                border-radius: 10px;
+                margin-top: 25px;
+            "
+        >
+
+            <h2>
+                Sản phẩm trong đơn hàng
+            </h2>
+
+            <div id="danhSachDatHang">
+
+                <!-- JavaScript hiển thị -->
+
+            </div>
+
+
+            <div
+                id="tongTienDatHang"
+                style="
+                    margin-top: 20px;
+                    font-size: 22px;
+                    font-weight: bold;
+                "
+            >
+
+                Tổng tiền: 0 VNĐ
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+
+    <footer>
+
+        <p>
+            © 2026 DuAnKD - Website quản lý kho và bán hàng
+        </p>
+
+    </footer>
+
+
+    <!-- ============================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================= -->
+
+    <script src="../js/dathang.js"></script>
+
+</body>
+
+</html>
